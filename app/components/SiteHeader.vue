@@ -11,8 +11,8 @@ watch(
 )
 
 const links = [
-  { label: 'Trang chu', to: '/' },
-  { label: 'Gioi thieu', to: '/gioi-thieu' },
+  { label: 'Trang chủ', to: '/' },
+  { label: 'Giới thiệu', to: '/gioi-thieu' },
   ...categories.map((item) => ({ label: item.title, to: item.route }))
 ]
 </script>
@@ -47,9 +47,8 @@ const links = [
       </nav>
 
       <div class="hidden items-center gap-4 lg:flex">
-        <span class="text-xs uppercase tracking-[0.24em] text-[var(--color-muted)]">responsive showcase</span>
         <NuxtLink to="/hoa" class="primary-button px-5 py-3">
-          Xem hoa
+          Xem Hoa
         </NuxtLink>
       </div>
 
@@ -57,7 +56,7 @@ const links = [
         type="button"
         class="flex h-11 w-11 items-center justify-center rounded-full border border-[var(--color-line)] bg-white/75 text-[var(--color-ink)] xl:hidden"
         :aria-expanded="isOpen"
-        aria-label="Mo menu"
+        aria-label="Mở menu"
         @click="isOpen = !isOpen"
       >
         <span class="space-y-1.5">

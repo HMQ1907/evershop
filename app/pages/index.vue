@@ -1,30 +1,30 @@
 <script setup lang="ts">
 useHead({
-  title: 'Trang chu'
+  title: 'Trang chủ'
 })
 
 const { categories } = useCatalogData()
 
 const reasons = [
   {
-    title: 'Toc do nhin nhanh',
-    body: 'Trang chu duoc chia ro thanh Hoa, Banh va Nuoc de khach vao la hieu ngay shop dang ban gi.'
+    title: 'Dễ chọn, dễ đặt',
+    body: 'Hoa, bánh, nước — mỗi nhóm một trang riêng, rõ ràng để bạn tìm đúng thứ mình cần.'
   },
   {
-    title: 'Tong mau nhe va sang',
-    body: 'Palette sage, blush, ivory va gold nhat hop voi hoa hon rat nhieu so voi huong nen den cu.'
+    title: 'Thẩm mỹ nhất quán',
+    body: 'Tất cả sản phẩm được chọn lọc theo cùng một ngôn ngữ màu sắc: nhẹ, sang, và đẹp khi chụp ảnh.'
   },
   {
-    title: 'San sang de mo rong',
-    body: 'Sau nay co the them gallery, gia, combo qua va dat hang ma van giu duoc bo cuc hien tai.'
+    title: 'Combo linh hoạt',
+    body: 'Kết hợp hoa + bánh + nước thành một set quà hoàn chỉnh, hoặc đặt riêng từng món tuỳ nhu cầu.'
   }
 ]
 
 const experiences = [
-  'Bo hoa cho sinh nhat, ky niem, khai truong',
-  'Banh toi gian cho tiec nho va qua tang',
-  'Nuoc signature de di cung set qua va ban tiep khach',
-  'Mot visual language thong nhat cho toan bo thuong hieu'
+  'Hoa cho người bạn yêu thương.',
+  'Bánh cho bữa tiệc ấm áp.',
+  'Thức uống để bữa gặp gỡ thêm phần đặc biệt.',
+  'Khi đi cùng nhau, mọi thứ trông đẹp hơn hẳn.'
 ]
 </script>
 
@@ -36,20 +36,20 @@ const experiences = [
 
       <div class="grid items-center gap-8 lg:grid-cols-[1.05fr_0.95fr]">
         <div class="animate-reveal space-y-6 sm:space-y-8">
-          <span class="soft-badge">evershop curated gifting studio</span>
+          <span class="soft-badge">evershop</span>
           <div class="space-y-4">
             <h1 class="display-title max-w-4xl text-5xl leading-none sm:text-7xl lg:text-[5.6rem]">
-              Hoa, banh va nuoc
-              <span class="block text-[var(--color-sage-deep)]">mem, tinh va de nho</span>
+              Mỗi món quà
+              <span class="block text-[var(--color-sage-deep)]">một khoảnh khắc đáng nhớ</span>
             </h1>
             <div class="gradient-line h-1.5 w-32 rounded-full sm:w-44" />
           </div>
           <p class="max-w-2xl text-base leading-8 text-[var(--color-body)] sm:text-lg">
-            evershop duoc thiet ke lai theo tinh than phu hop hon voi shop hoa: sang, diu, co nhieu khoang tho va de nhin tren ca mobile lan desktop.
+            Hoa tươi, bánh handmade và thức uống signature — được chúng tôi chọn lựa kỹ lưỡng để mỗi dịp đặc biệt của bạn trở nên trọn vẹn hơn.
           </p>
           <div class="flex flex-wrap gap-3 sm:gap-4">
-            <a href="#danh-muc" class="primary-button">Xem danh muc</a>
-            <NuxtLink to="/gioi-thieu" class="secondary-button">Gap chu shop</NuxtLink>
+            <a href="#danh-muc" class="primary-button">Khám phá ngay</a>
+            <NuxtLink to="/gioi-thieu" class="secondary-button">Câu chuyện của chúng tôi</NuxtLink>
           </div>
         </div>
 
@@ -64,12 +64,12 @@ const experiences = [
             </div>
             <div class="grid gap-3 p-4 sm:grid-cols-2 sm:p-6">
               <div class="glass-card rounded-[1.5rem] p-4">
-                <p class="eyebrow mb-2">Mood</p>
-                <p class="display-title text-2xl">Fresh floral luxury</p>
+                <p class="eyebrow mb-2">Cảm hứng</p>
+                <p class="display-title text-2xl">Nhẹ nhàng, ấm áp, dễ yêu</p>
               </div>
               <div class="glass-card rounded-[1.5rem] p-4">
-                <p class="eyebrow mb-2">Responsive</p>
-                <p class="display-title text-2xl">Mobile first layout</p>
+                <p class="eyebrow mb-2">Trải nghiệm</p>
+                <p class="display-title text-2xl">Xem đẹp trên mọi màn hình</p>
               </div>
             </div>
           </div>
@@ -80,10 +80,10 @@ const experiences = [
     <section id="danh-muc" class="shell py-8 sm:py-12 lg:py-16">
       <div class="mb-8 flex flex-col gap-4 sm:mb-10 lg:flex-row lg:items-end lg:justify-between">
         <div class="animate-reveal max-w-3xl space-y-4">
-          <p class="eyebrow">Ba page danh muc</p>
-          <h2 class="display-title text-4xl sm:text-6xl">chon nhanh theo nhu cau</h2>
+          <p class="eyebrow">Danh mục</p>
+          <h2 class="display-title text-4xl sm:text-6xl">Bạn đang cần gì hôm nay?</h2>
           <p class="text-base leading-8 text-[var(--color-body)]">
-            Thay vi gom tat ca vao mot khu, moi nhom san pham da co page rieng de de mo rong gallery, combo va noi dung chi tiet sau nay.
+            Hoa cho người bạn yêu thương. Bánh cho bữa tiệc ấm áp. Thức uống để bữa gặp gỡ thêm phần đặc biệt.
           </p>
         </div>
       </div>
@@ -109,7 +109,7 @@ const experiences = [
             </div>
             <p class="text-sm leading-7 text-[var(--color-body)]">{{ item.summary }}</p>
             <span class="inline-flex items-center gap-3 text-xs font-bold uppercase tracking-[0.2em] text-[var(--color-berry)]">
-              Kham pha page
+              Khám phá
               <span class="gradient-line h-px w-10" />
             </span>
           </div>
@@ -120,10 +120,10 @@ const experiences = [
     <section class="shell py-8 sm:py-12 lg:py-16">
       <div class="grid gap-5 lg:grid-cols-[0.95fr_1.05fr]">
         <div class="animate-reveal space-y-4">
-          <p class="eyebrow">Vi sao doi design</p>
-          <h2 class="display-title text-4xl sm:text-6xl">mot shop hoa can nhe, mo va co hoi tho</h2>
+          <p class="eyebrow">Điểm nổi bật</p>
+          <h2 class="display-title text-4xl sm:text-6xl">Ba điều khiến evershop khác biệt</h2>
           <p class="max-w-xl text-base leading-8 text-[var(--color-body)]">
-            Huong den truoc day qua manh va xa cam xuc cua mot shop hoa. He thong moi uu tien do sang, nen kem, lop texture nhe va bo cuc nhin de chiu tren man hinh nho.
+            Mỗi lựa chọn tại evershop đều hướng đến một điều rất đơn giản: giúp bạn tìm được món quà đẹp, đúng dịp và dễ khiến người nhận mỉm cười.
           </p>
         </div>
 
@@ -146,8 +146,8 @@ const experiences = [
       <div class="soft-panel overflow-hidden rounded-[2rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <div class="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
           <div class="animate-reveal">
-            <p class="eyebrow mb-4">Trai nghiem thuong hieu</p>
-            <h2 class="display-title text-4xl sm:text-5xl">mot set qua dep hon khi moi mon deu noi cung mot ngon ngu</h2>
+            <p class="eyebrow mb-4">Set quà</p>
+            <h2 class="display-title text-4xl sm:text-5xl">Khi cả ba cùng nhau — set quà của bạn sẽ đẹp hơn bạn nghĩ</h2>
           </div>
 
           <div class="grid gap-3 sm:grid-cols-2">

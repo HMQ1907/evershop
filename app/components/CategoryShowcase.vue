@@ -13,9 +13,9 @@ const routeMap = {
 } as const
 
 const nextLabelMap = {
-  hoa: 'Xem page Banh',
-  banh: 'Xem page Nuoc',
-  nuoc: 'Xem page Hoa'
+  hoa: 'Xem trang Bánh',
+  banh: 'Xem trang Nước',
+  nuoc: 'Xem trang Hoa'
 } as const
 </script>
 
@@ -23,7 +23,7 @@ const nextLabelMap = {
   <main class="shell py-10 sm:py-14 lg:py-16">
     <section class="grid gap-8 lg:grid-cols-[0.96fr_1.04fr] lg:items-center">
       <div class="animate-reveal space-y-6">
-        <span class="soft-badge">{{ page.eyebrow }}</span>
+        <span class="soft-badge">{{ page.badge }}</span>
         <div class="space-y-4">
           <p class="eyebrow">{{ page.eyebrow }}</p>
           <h1 class="display-title text-5xl leading-none sm:text-7xl">{{ page.title }}</h1>
@@ -33,7 +33,7 @@ const nextLabelMap = {
           {{ page.intro }}
         </p>
         <div class="flex flex-wrap gap-3 sm:gap-4">
-          <NuxtLink to="/" class="secondary-button">Ve trang chu</NuxtLink>
+          <NuxtLink to="/" class="secondary-button">Về trang chủ</NuxtLink>
           <NuxtLink :to="routeMap[slug]" class="primary-button">{{ nextLabelMap[slug] }}</NuxtLink>
         </div>
       </div>
@@ -52,8 +52,8 @@ const nextLabelMap = {
 
     <section class="py-10 sm:py-14">
       <div class="mb-8 max-w-3xl space-y-4">
-        <p class="eyebrow">Gallery</p>
-        <h2 class="display-title text-4xl sm:text-6xl">nhung layout goi y cho {{ page.title.toLowerCase() }}</h2>
+        <p class="eyebrow">Bộ sưu tập</p>
+        <h2 class="display-title text-4xl sm:text-6xl">{{ page.collectionTitle }}</h2>
       </div>
 
       <div class="section-grid sm:grid-cols-2 xl:grid-cols-3">
@@ -70,7 +70,7 @@ const nextLabelMap = {
             <div class="flex items-center justify-between gap-3">
               <p class="eyebrow">{{ item.note }}</p>
               <span class="rounded-full bg-[rgba(231,194,201,0.2)] px-3 py-1.5 text-[0.7rem] uppercase tracking-[0.18em] text-[var(--color-berry)]">
-                curated
+                {{ page.tag }}
               </span>
             </div>
             <h3 class="display-title text-3xl sm:text-4xl">{{ item.name }}</h3>
@@ -84,8 +84,8 @@ const nextLabelMap = {
       <div class="soft-panel overflow-hidden rounded-[2rem] px-5 py-8 sm:px-8 lg:px-12 lg:py-12">
         <div class="grid gap-8 lg:grid-cols-[0.92fr_1.08fr] lg:items-start">
           <div class="space-y-4">
-            <p class="eyebrow">Goi y visual</p>
-            <h2 class="display-title text-4xl sm:text-5xl">cach de page {{ page.title.toLowerCase() }} dep va de ban hon sau nay</h2>
+            <p class="eyebrow">{{ page.tipsEyebrow }}</p>
+            <h2 class="display-title text-4xl sm:text-5xl">{{ page.tipsTitle }}</h2>
           </div>
 
           <div class="grid gap-3">
