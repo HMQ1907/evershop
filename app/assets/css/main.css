@@ -20,8 +20,8 @@
 }
 
 @theme {
-  --font-sans: "Manrope", sans-serif;
-  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Be Vietnam Pro", sans-serif;
+  --font-display: "Lora", serif;
 }
 
 html {
@@ -34,7 +34,9 @@ body {
     radial-gradient(circle at top right, rgba(156, 175, 136, 0.2), transparent 26%),
     linear-gradient(180deg, #fbf7f2 0%, #f7f2ea 55%, #f4eee5 100%);
   color: var(--color-body);
-  font-family: "Manrope", sans-serif;
+  font-family: "Be Vietnam Pro", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 body::before {
@@ -75,17 +77,18 @@ img {
 }
 
 .display-title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Lora", serif;
   color: var(--color-ink);
-  letter-spacing: 0.01em;
+  letter-spacing: -0.015em;
+  font-weight: 600;
 }
 
 .eyebrow {
   color: var(--color-sage-deep);
-  letter-spacing: 0.26em;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
-  font-size: 0.75rem;
-  font-weight: 700;
+  font-size: 0.72rem;
+  font-weight: 600;
 }
 
 .glass-card {
@@ -112,10 +115,9 @@ img {
   background: var(--color-sage-deep);
   color: #fffdf9;
   padding: 0.95rem 1.5rem;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   box-shadow: 0 18px 40px rgba(101, 120, 91, 0.18);
 }
 
@@ -134,10 +136,9 @@ img {
   background: rgba(255, 255, 255, 0.6);
   color: var(--color-ink);
   padding: 0.95rem 1.5rem;
-  font-size: 0.82rem;
-  font-weight: 700;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
+  font-size: 0.84rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
 }
 
 .secondary-button:hover {
@@ -155,6 +156,8 @@ img {
   background: rgba(255, 255, 255, 0.62);
   padding: 0.48rem 0.85rem;
   color: var(--color-sage-deep);
+  font-size: 0.82rem;
+  font-weight: 500;
 }
 
 .soft-badge::before {

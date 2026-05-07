@@ -23,13 +23,13 @@ const links = [
       <NuxtLink to="/" class="group flex items-center gap-4">
         <div class="overflow-hidden rounded-full border border-[var(--color-line)] bg-white/80 px-4 py-2 shadow-[var(--shadow-soft)]">
           <div class="gradient-line h-1 w-12 rounded-full" />
-          <div class="mt-2 flex items-center justify-center text-[0.72rem] uppercase tracking-[0.38em] text-[var(--color-sage-deep)]">
+          <div class="mt-2 flex items-center justify-center text-[0.72rem] uppercase tracking-[0.28em] text-[var(--color-sage-deep)]">
             es
           </div>
         </div>
         <div>
-          <p class="display-title text-2xl font-semibold tracking-[0.16em]">evershop</p>
-          <p class="text-[0.72rem] uppercase tracking-[0.28em] text-[var(--color-muted)]">
+          <p class="display-title text-2xl font-semibold tracking-[0.04em]">evershop</p>
+          <p class="text-[0.74rem] tracking-[0.12em] text-[var(--color-muted)]">
             flowers cakes drinks
           </p>
         </div>
@@ -40,7 +40,7 @@ const links = [
           v-for="link in links"
           :key="link.to"
           :to="link.to"
-          class="text-sm font-medium uppercase tracking-[0.18em] text-[var(--color-body)] hover:text-[var(--color-sage-deep)]"
+          class="text-sm font-medium tracking-[0.04em] text-[var(--color-body)] hover:text-[var(--color-sage-deep)]"
         >
           {{ link.label }}
         </NuxtLink>
@@ -73,7 +73,7 @@ const links = [
           v-for="link in links"
           :key="link.to"
           :to="link.to"
-          class="border-b border-[var(--color-line)] pb-4 text-sm uppercase tracking-[0.18em] text-[var(--color-body)]"
+          class="border-b border-[var(--color-line)] pb-4 text-sm tracking-[0.04em] text-[var(--color-body)]"
         >
           {{ link.label }}
         </NuxtLink>
